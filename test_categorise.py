@@ -6,3 +6,7 @@ def test_kick():
 
 def test_unknown():
     assert categorise("Serum") == ("Serum", "unknown")
+
+
+def test_hat_loop():
+    assert categorise("Hat LOOP 91 BPM") == ("Hat", "Drums")
