@@ -10,3 +10,6 @@ def test_unknown():
 
 def test_hat_loop():
     assert categorise("Hat LOOP 91 BPM") == ("Hat", "Drums")
+
+def test_hat_loop_uppercase():
+    assert categorise("HAT LOOP 91 BPM") == ("Hat", "Drums")
